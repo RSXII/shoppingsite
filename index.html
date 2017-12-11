@@ -27,17 +27,20 @@
             <section class="col-md-3 slider-container">
                 <div id="sliderContainer">
                     <ul id="sliderMenu">
-                        <li>SHOW ALL</li>
-                        <li>MEN'S CLOTHES</li>
-                        <li>WOMEN'S CLOTHES</li>
-                        <li>MEN'S SHOES</li>
-                        <li>WOMEN'S SHOES</li>
-                        <li>ACCESSORIES</li>
+                        <li id="showAll" onclick="fillContent('showall')">SHOW ALL</li>
+                        <li id="mClothes" onclick="fillContent('m-c-')">MEN'S CLOTHES</li>
+                        <li id="wClothes" onclick="fillContent('w-c-')">WOMEN'S CLOTHES</li>
+                        <li id="mShoes">MEN'S SHOES</li>
+                        <li id="wShoes">WOMEN'S SHOES</li>
+                        <li id="acces">ACCESSORIES</li>
                     </ul>
                 </div>
             </section>
-           <section class="col-md-9 product-container">
+           <section class="col-md-9 product-container container-fluid">
+               <section class="col-sm-12" id="theProducts">
 
+               </section>
+               
            </section>
         </section>
     </div>

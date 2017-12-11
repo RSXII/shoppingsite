@@ -54,3 +54,13 @@ header li{
     position: relative;
     height: 60px;
 }
+#sliderMenu li{
+    cursor: pointer;
+}
+.product{
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    padding-bottom: 52%;
+    display: inline-block;
+}

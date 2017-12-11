@@ -1,7 +1,13 @@
 const sliderMenu = document.getElementById('sliderMenu');
 let sliderPosition = document.getElementById('sliderMenu').offsetLeft;
 let moveSlider;
-
+const theProducts = document.getElementById('theProducts');
+const theLoop = function(section){
+    for(let i = 1; i < 3; i++){
+        theProducts.innerHTML += "<div class='product col-sm-12 col-md-6 col-lg-4' style='background-image: url(images/" 
+        + section + i + ".png); background-position: center'></div>";
+    }
+}
 
 
 sliderMenu.addEventListener("mousedown", function(e){
@@ -21,6 +27,21 @@ sliderMenu.addEventListener("mousedown", function(e){
         sliderMenu.removeEventListener('mousemove', mouseMoveCall);
     }, true)
 }, false);
+
+document.onload = fillContent("m-c-");
+
+function fillContent(section){
+    theProducts.innerHTML = "";
+    if(section != 'showall'){
+           theLoop(section);
+    }else{
+        let allProd = ['m-c-', 'w-c-'];
+        allProd.forEach(function(section){
+           theLoop(section);
+        })
+    }
+}
+
 
 
 
