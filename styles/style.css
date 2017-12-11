@@ -1,0 +1,56 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    background: url('../images/arctic.jpg');
+    background-position-y: -200px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+header{
+    background: #555;
+    color: white;
+    border-bottom: 4px solid;
+    border-color: rgba(0,0,0,.3);
+}
+.slider-container{
+   overflow: hidden;
+    color: white;
+}
+.slider-container ul{
+    padding: 0;
+    width: 1000px;
+    position: absolute;
+    left: -20px;
+}
+.slider-container li{
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+header nav ul{
+   padding: 20px 0;
+}
+header li{
+    display: block;
+    text-align: center;
+    list-style-type: none;
+    padding: 6px 0;
+}
+.theContainer{
+    min-height: 700px;
+    background: linear-gradient(rgba(68,68,68,1),rgba(68,68,68,0.8) );
+    background: -o-linear-gradient(rgba(68,68,68,1),rgba(68,68,68,0.8) );
+    background: -moz-linear-gradient(rgba(68,68,68,1),rgba(68,68,68,0.8) );
+    background: -webkit-linear-gradient(rgba(68,68,68,1),rgba(68,68,68,0.8) );
+
+}
+.slider-container li{
+    padding: 20px 0;
+}
+#sliderContainer{
+    width: 1000px;
+    position: relative;
+    height: 60px;
+}
