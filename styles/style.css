@@ -56,11 +56,19 @@ header li{
 }
 #sliderMenu li{
     cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .product{
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     padding-bottom: 52%;
+    display: inline-block;
+}
+.itemContainer{
     display: inline-block;
 }
