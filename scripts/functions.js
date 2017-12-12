@@ -29,6 +29,23 @@ sliderMenu.addEventListener("mousedown", function(e){
     }, true)
 }, false);
 
+sliderMenu.addEventListener("ontouchstart", function(e){
+    e = e || window.event;
+    let x = e.clientX;
+    let y = sliderPosition;
+
+    let mouseMoveCall = function(e){
+        let newPosition = e.clientX;
+        document.getElementById('sliderMenu').style.left = newPosition - x + y + "px";
+    }
+        sliderMenu.addEventListener("ontouchmove", mouseMoveCall);
+    
+    sliderMenu.addEventListener('ontouchend', function(){
+        sliderPosition = sliderMenu.offsetLeft;
+        sliderMenu.removeEventListener('ontouchmove', mouseMoveCall);
+    }, true)
+}, false);
+
 document.onload = fillContent('showAll');
 
 function fillContent(section){
